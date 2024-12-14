@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="471.0" prefWidth="1098.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.controllers.SessionDetailsController">
+    <Label alignment="CENTER" prefHeight="65.0" prefWidth="663.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Session Details" textAlignment="CENTER" />
+    <Button onAction="#uploadMaterials" prefHeight="24.0" prefWidth="177.0" text="Upload Materials" />
+    <Button onAction="#trackAttendance" prefHeight="24.0" prefWidth="177.0" text="Track Attendance" />
+    <Button onAction="#quizParticipation" prefHeight="24.0" prefWidth="177.0" text="Quiz Participation" />
+    <Button onAction="#goBack" prefHeight="24.0" prefWidth="177.0" text="Back to Dashboard" />
+</VBox>
