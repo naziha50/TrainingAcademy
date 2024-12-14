@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shafin.ManageFlightScheduleAndPlanning">
+   <children>
+      <Label layoutX="168.0" layoutY="48.0" prefHeight="23.0" prefWidth="263.0" style="-fx-border-color: red;" text="Manage Flight Schedule And Planning">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernametextfield" layoutX="138.0" layoutY="100.0" />
+      <TextField fx:id="passwordtextfield" layoutX="138.0" layoutY="143.0" />
+      <Label layoutX="37.0" layoutY="104.0" text="User Name" />
+      <Label layoutX="37.0" layoutY="147.0" text="Password" />
+      <Button layoutX="87.0" layoutY="200.0" mnemonicParsing="false" onAction="#submitbuttononmouseclicked" text="Submit" />
+      <TableView layoutX="349.0" layoutY="147.0" prefHeight="200.0" prefWidth="230.0">
+        <columns>
+          <TableColumn fx:id="flightnumbertablecolumnview" prefWidth="105.3333740234375" text="Flight Number" />
+          <TableColumn fx:id="timecolumnview" prefWidth="45.33331298828125" text="Time" />
+            <TableColumn fx:id="statuscolumnview" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="36.0" layoutY="292.0" mnemonicParsing="false" onAction="#editflightbuttononmouseclicked" text="Edit Flight" />
+      <Button layoutX="161.0" layoutY="292.0" mnemonicParsing="false" onAction="#addflightbuttononmouseclicked" text="Add Flight" />
+      <Label layoutX="425.0" layoutY="112.0" text="Flight Information" />
+   </children>
+</AnchorPane>
