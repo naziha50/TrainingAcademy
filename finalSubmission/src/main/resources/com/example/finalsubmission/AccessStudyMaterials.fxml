@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="TOP_CENTER" prefWidth="800" prefHeight="600">
+
+
+    <Label text="Study Materials" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Dashboard" fx:id="dashboardButton" />
+        <Button text="Resources" fx:id="resourcesButton" style="-fx-font-weight: bold;" />
+    </HBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Search Materials:" />
+        <TextField fx:id="searchField" prefWidth="300" promptText="Search by topic, module, or keyword" />
+        <Button text="Search" fx:id="searchButton" />
+    </HBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Available Resources" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <ListView fx:id="materialsList" prefHeight="200" prefWidth="700">
+            <items>
+                <StringItem text="Sample PDF - Topic A" />
+                <StringItem text="Video - Module B" />
+                <StringItem text="Presentation - Topic C" />
+            </items>
+        </ListView>
+    </VBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Download" fx:id="downloadButton" />
+        <Button text="Open" fx:id="openButton" />
+    </HBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Bookmark" fx:id="bookmarkButton" />
+        <Button text="Mark as Completed" fx:id="completedButton" />
+    </HBox>
+
+</VBox>

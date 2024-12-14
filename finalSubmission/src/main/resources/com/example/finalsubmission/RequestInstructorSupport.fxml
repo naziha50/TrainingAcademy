@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="TOP_CENTER" prefWidth="800" prefHeight="600">
+
+
+    <Label text="Request Instructor Support" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Dashboard" fx:id="dashboardButton" />
+        <Button text="Support" fx:id="supportButton" style="-fx-font-weight: bold;" />
+    </HBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Select Instructor:" />
+        <ChoiceBox fx:id="instructorChoiceBox" prefWidth="300" />
+        <Button text="Select" fx:id="selectInstructorButton" />
+    </HBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Describe your issue or query:" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <TextArea fx:id="queryArea" prefWidth="700" prefHeight="150" wrapText="true" promptText="Write your query or issue here..." />
+    </VBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Attach Files (optional)" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Browse Files" fx:id="browseButton" />
+            <TextField fx:id="filePathField" prefWidth="500" editable="false" promptText="No file selected" />
+        </HBox>
+    </VBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Send Request" fx:id="sendRequestButton" style="-fx-background-color: #007bff; -fx-text-fill: white;" />
+    </HBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Response Status" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <TextArea fx:id="responseArea" prefWidth="700" prefHeight="100" wrapText="true" editable="false" promptText="Your response will appear here once available." />
+    </VBox>
+</VBox>

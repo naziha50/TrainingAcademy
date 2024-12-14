@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="TOP_CENTER" prefWidth="800" prefHeight="600">
+
+
+    <Label text="Log Practice Flights" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Dashboard" fx:id="dashboardButton" />
+        <Button text="Logbook" fx:id="logbookButton" style="-fx-font-weight: bold;" />
+    </HBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add New Entry" fx:id="addEntryButton" style="-fx-background-color: #28a745; -fx-text-fill: white;" />
+    </HBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Flight Details" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+            <Label text="Flight Date:" />
+            <DatePicker fx:id="flightDatePicker" prefWidth="200" />
+
+            <Label text="Duration (hrs):" />
+            <TextField fx:id="durationField" prefWidth="200" promptText="Enter duration" />
+
+            <Label text="Aircraft Type:" />
+            <TextField fx:id="aircraftTypeField" prefWidth="200" promptText="Enter aircraft type" />
+
+            <Label text="Route:" />
+            <TextField fx:id="routeField" prefWidth="200" promptText="Enter route" />
+        </GridPane>
+    </VBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Comments/Observations (optional)" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <TextArea fx:id="commentsArea" prefWidth="700" prefHeight="150" wrapText="true" promptText="Add any comments or observations..." />
+    </VBox>
+
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Upload Supporting Documents" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Browse Files" fx:id="browseButton" />
+            <TextField fx:id="filePathField" prefWidth="500" editable="false" promptText="No file selected" />
+        </HBox>
+    </VBox>
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Save Entry" fx:id="saveEntryButton" style="-fx-background-color: #007bff; -fx-text-fill: white;" />
+        <Button text="Log Out" fx:id="logoutButton" style="-fx-background-color: #dc3545; -fx-text-fill: white;" />
+    </HBox>
+</VBox>

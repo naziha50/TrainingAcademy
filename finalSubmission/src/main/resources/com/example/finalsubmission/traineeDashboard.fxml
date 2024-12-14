@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalsubmission.TraineeDashboardController">
+   <children>
+      <Label layoutX="167.0" layoutY="24.0" prefHeight="27.0" prefWidth="245.0" text="Trainee Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="88.0" mnemonicParsing="false" onAction="#registerforButton" prefHeight="55.0" prefWidth="143.0" text="Register for Tranning" />
+      <Button layoutX="34.0" layoutY="162.0" mnemonicParsing="false" onAction="#traningSchuduleBitton" prefHeight="55.0" prefWidth="143.0" text="View traning Schudule" />
+      <Button layoutX="35.0" layoutY="239.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" text="Online Quiz" />
+      <Button layoutX="252.0" layoutY="76.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" text="Access Study Matereial" />
+      <Button layoutX="252.0" layoutY="162.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" text="Request instructor support" />
+   </children>
+</AnchorPane>
